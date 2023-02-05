@@ -1,0 +1,11 @@
+package com.luma.auto.testpages;
+
+import com.luma.auto.testbase.TestBase;
+import org.openqa.selenium.support.PageFactory;
+
+public class MenTopBrasTanksPage extends TestBase {
+
+    public MenTopBrasTanksPage(){
+        PageFactory.initElements(driver, this);
+    }
+}

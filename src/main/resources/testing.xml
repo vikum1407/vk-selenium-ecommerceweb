@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Luma E-Commerce Automation Suite">
+
+    <listeners>
+        <listener class-name="com.luma.auto.extendReport.ExtendReport" />
+    </listeners>
+
+
+    <test name="Dialog Website">
+        <classes>
+            <class name="com.luma.auto.testcases.HomeTestPage"></class>
+            <class name="com.luma.auto.testcases.WomenTestPage"></class>
+            <class name="com.luma.auto.testcases.MenTestPage"></class>
+            <class name="com.luma.auto.testcases.WhatsNewTestPage"></class>
+        </classes>
+    </test>
+</suite>
+
+        <!--- If we need to run test in parellel, we can use master xml file to call one or multiple xml file as follows
+
+        <suite name="MasterTestSuite" >
+        <suite-files>
+            <suite-file path=""></suite-file>
+        </suite-files>
+        </suite>
+
+        -->
